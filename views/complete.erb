@@ -40,31 +40,32 @@
         <p>3営業日以内をめどにご返信いたしますので、しばらくお待ちください。</p>
         <h2 class="mt-4 pb-4">送信内容</h2>
          <table class="table">
-    <tr>
-        <th>会社内容</th>
+        <tr>
+        <td>会社内容</td>
          <% company= params["company"] %>
-        <th><%= company %></th>
+        <td><%= company %></td>
     </tr>
     <tr>
-        <th>氏名</th>
+        <td>氏名</td>
         <% name= params["name"] %>
         <td><%= name %></td>
     </tr>
     <tr>
-        <th>メール</th>
+        <td>メール</td>
         <% mail= params["mail"] %>
         <td><%= mail %></td>
     </tr>
     <tr>
-        <th>電話番号</th>
+        <td>電話番号</td>
         <% tel= params["tel"] %>
         <td><%= tel %></td>
     </tr>
     <tr>
-        <th>内容</th>
+        <td>内容</td>
         <% content= params["content"] %>
-       <th><%=content.gsub(/\r\n|\r|\n/, "<br>")%></th>
+       <td><%=content.gsub(/\r\n|\r|\n/, "<br>")%></td>
     </tr>
+       
 </table>
         
         
